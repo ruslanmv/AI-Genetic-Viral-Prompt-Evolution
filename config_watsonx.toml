@@ -1,0 +1,16 @@
+[data]
+classes = ["A","B","C","D"]
+
+[genome]
+header  = "You are a strict classifier. Answer with a single letter."
+context = """
+EX1 -> A
+EX2 -> B
+EX3 -> D
+"""
+query   = "Predict the class for the row: {{ROW}}"
+
+[evolver]
+max_prompt_tokens = 2000
+max_tries   = 20
+fail_memory = 20
